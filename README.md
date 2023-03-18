@@ -12,11 +12,11 @@
 <p><h5>Database</h5>
     ใช้ mongoose เป็น middleware ในการเชื่อมต่อกับ mongoDB โดยจะใช้ model Middleware เพื่อสร้าง schema หรือ โครงสร้างของข้อมูลที่ต้องการเก็บในฐานข้อมูล</br>
     มีการเก็บข้อมูลภาพยนตร์โดยมี data schema ดังนี้</br>
-    { &nbspid: Number,</br>
-      &nbsptitle: String,</br>
-      &nbspyear: String,</br>
-      &nbspimdbID: String,</br>
-      &nbspposter: String</br>
+    { &nbs&nbsppid: Number,</br>
+      &nbsp&nbsptitle: String,</br>
+      &nbsp&nbspyear: String,</br>
+      &nbsp&nbspimdbID: String,</br>
+      &nbsp&nbspposter: String</br>
      }       
 </p>
 <p><h5>Backend</h5>
