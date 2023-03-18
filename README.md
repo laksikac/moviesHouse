@@ -18,7 +18,8 @@
       &nbsp&nbspyear: String,</br>
       &nbsp&nbspimdbID: String,</br>
       &nbsp&nbspposter: String</br>
-     }       
+     } </br>
+     โดยข้อมูลภาพยนตร์นำมาจาก  http://www.omdbapi.com
 </p>
 <p><h5>Backend</h5>
     ใช้ node.js มาช่วยจัดการในส่วนนี้และเรียกใช้ express middleware 
@@ -35,9 +36,9 @@
     ใช้ React-app framework และตกแต่งด้วย bootstrap </br>
     นำ axios มาช่วยในเรื่องการจัดการเกี่ยวกับการใช้ API</br>
     สามารถเข้าถึงหน้าเว็บไซต์ได้โดย http://localhost:3000</br>
-    ภายในแอปจะมีทั้งหมมด 5 componentsและมีหน้าที่ ดังนี้</br>
+    ภายในแอปจะมีทั้งหมมด 5 components และมีหน้าที่ ดังนี้</br>
     1).MovieList เพื่อแสดงรายการภาพยนตร์ที่มีอยู่</br>
-    2).MovieListHeading เพื่อส่ง heading ไปแสดงข้อความของแต่ละ part ว่าทำหน้าที่อะไรเช่น Movies แสดงรายการภาพยนตร์เป็นรูป posster , My Cart แสดงรายการภาพยนตร์ที่ได้เลือกไว้</br>
+    2).MovieListHeading เพื่อส่ง heading ไปแสดงข้อความของแต่ละ part ว่าทำหน้าที่อะไรเช่น Movies แสดงรายการภาพยนตร์เป็นรูป poster , My Cart แสดงรายการภาพยนตร์ที่ได้เลือกไว้</br>
     3).SearchBox.js เพื่อไว้ใช้เลือกชื่อรายการภาพยนตร์ที่สนใจ</br>
     4).AddToCart.js จะแสดงปุ่มกดเพื่อเลือกภาพยนตร์ที่จะเช่า</br>
     5).RemoveFavorites.js จะแสดงปุ่มกดเพื่อลบภาพยนตร์ที่จะเช่าออก</br>
