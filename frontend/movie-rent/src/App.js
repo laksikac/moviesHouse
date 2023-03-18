@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import AddToCart from './components/AddToCart';
+import RemoveFavourites from './components/RemoveFavourites';
 
 const App = () => {
 	const [movies, setMovies] = useState([]);
@@ -23,6 +24,13 @@ const App = () => {
 	};
 	const addRentMovie = (movie) => {
 		const newRentList = [...rentMovie, movie];
+		setRentMovie(newRentList);
+	};
+  const removeFavouriteMovie = (movie) => {
+		const newRentList = rentMovie.filter(
+			(favourite) => favourite.imdbID !== movie.imdbID
+		);
+
 		setRentMovie(newRentList);
 	};
 	useEffect(() => {
@@ -46,7 +54,11 @@ const App = () => {
 				<MovieListHeading heading='Favourites' />
 			</div>
 			<div className='row'>
-				<MovieList movies={rentMovie} cartComponent={AddToCart} />
+      <MovieList
+					movies={movies}
+					cartComponent={removeFavouriteMovie}
+					handleCartClick={RemoveFavourites}
+				/>
 			</div>
 		</div>
 	);
