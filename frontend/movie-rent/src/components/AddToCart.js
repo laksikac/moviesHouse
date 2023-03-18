@@ -3,7 +3,7 @@ import React from 'react';
 const AddToCart = () => {
 	return (
 		<>
-			<span className='mr-2'>Add to Favourites</span>
+			<span className='mr-2'>Add to cart</span>
 			<svg
 				width='1em'
 				height='1em'
