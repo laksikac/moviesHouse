@@ -1,25 +1,39 @@
 # moviesHouse
 <h3>อธิบายโปรเจค</h3>
-<p> -โปรเจคนี้จะทำ web application สำหรับเช่าภาพยนต์</br>
+<p> -โปรเจคนี้จะทำ web application สำหรับเช่าภาพยนต์โดยจะใช้เครื่องมือพัฒนาดังนี้</br>
   Database: MongoDB</br>
   Backend: Node.js จะใช้ express, cors, compress, body-parser เข้ามาด้วย</br>
   Frontend: React Framework ตกแต่งด้วย bootstrap</br>
+  
+</p>
+<p>g;H[w:9N0tgxHodki
 </p>
 
 <p><h5>Database</h5>
-    มีการเก็บข้อมูลภาพยนตร์โดยมี data schema ดังนี้
-    {
-       Title: "",
-       
+    ใช้ mongoose เป็น middleware ในการเชื่อมต่อกับ mongoDB โดยจะใช้ model Middleware เพื่อสร้าง schema หรือ โครงสร้างของข้อมูลที่ต้องการเก็บในฐานข้อมูล</br>
+    มีการเก็บข้อมูลภาพยนตร์โดยมี data schema ดังนี้</br>
+    { id: Number,</br>
+      title: String,</br>
+      year: String,</br>
+      imdbID: String,</br>
+      poster: String</br>
+     }       
 </p>
 <p><h5>Backend</h5>
     ใช้ node.js มาช่วยจัดการในส่วนนี้และเรียกใช้ express middleware 
-    เปิดด้วย http://localhost:8000
+    เปิดด้วย http://localhost:3001
     โดยสามารถเรียก api ใช้ Http request ในการเรียกดูข้อมูล อัพเดตข้อมูล เพิ่มข้อมูล และ ลบข้อมูล 
     โดย method GET, POST, PUT, DELETE
+    GET: http://localhost:3001/api/getData</br>
+    POST: http://localhost:3001/api/putData</br>
+    PUT: http://localhost:3001/api/updateData</br>
+    DELETE: http://localhost:3001/api/deleteData</br>
+    
 </p>
 <p><h5>Frontend</h5>
-    ใช้ React-app framework และตกแต่งด้วย bootstrap 
+    ใช้ React-app framework และตกแต่งด้วย bootstrap </br>
+    นำ axios มาช่วยในเรื่องการจัดการเกี่ยวกับการใช้ API
+    
 </p>
   
 <h3>สมาชิกในกลุ่ม</h3>
