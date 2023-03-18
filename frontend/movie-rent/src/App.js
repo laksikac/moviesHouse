@@ -9,6 +9,7 @@ import AddToCart from './components/AddToCart';
 const App = () => {
 	const [movies, setMovies] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
+  const [rentMovie, setRentMovie] = useState([]);
 
 	const getMovieRequest = async (searchValue) => {
 		const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;
@@ -20,7 +21,10 @@ const App = () => {
 			setMovies(responseJson.Search);
 		}
 	};
-
+	const addRentMovie = (movie) => {
+		const newRentList = [...rentMovie, movie];
+		setRentMovie(newRentList);
+	};
 	useEffect(() => {
 		getMovieRequest(searchValue);
 	}, [searchValue]);
@@ -32,7 +36,17 @@ const App = () => {
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
 			<div className='row'>
-				<MovieList movies={movies} cartComponent={AddToCart} />
+				<MovieList
+					movies={movies}
+					cartComponent={AddToCart}
+					handleCartClick={addRentMovie}
+				/>
+			</div>
+			<div className='row d-flex align-items-center mt-4 mb-4'>
+				<MovieListHeading heading='Favourites' />
+			</div>
+			<div className='row'>
+				<MovieList movies={rentMovie} cartComponent={AddToCart} />
 			</div>
 		</div>
 	);
