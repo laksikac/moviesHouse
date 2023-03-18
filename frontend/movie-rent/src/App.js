@@ -8,60 +8,74 @@ import AddToCart from './components/AddToCart';
 import RemoveFavourites from './components/RemoveFavourites';
 
 const App = () => {
-	const [movies, setMovies] = useState([]);
-	const [searchValue, setSearchValue] = useState('');
+  const [movies, setMovies] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
   const [rentMovie, setRentMovie] = useState([]);
 
-	const getMovieRequest = async (searchValue) => {
-		const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;
+  const getMovieRequest = async (searchValue) => {
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;
 
-		const response = await fetch(url);
-		const responseJson = await response.json();
+    const response = await fetch(url);
+    const responseJson = await response.json();
 
-		if (responseJson.Search) {
-			setMovies(responseJson.Search);
-		}
-	};
-	const addRentMovie = (movie) => {
-		const newRentList = [...rentMovie, movie];
-		setRentMovie(newRentList);
-	};
+    if (responseJson.Search) {
+      setMovies(responseJson.Search);
+    }
+  };
+  useEffect(() => {
+    getMovieRequest(searchValue);
+  }, [searchValue]);
+  useEffect(() => {
+    const movieFavourites = JSON.parse(
+      localStorage.getItem('movie-rent-rentMovie')
+    );
+
+    if (movieFavourites) {
+      setRentMovie(movieFavourites);
+    }
+  }, []);
+  const saveToLocalStorage = (items) => {
+    localStorage.setItem('movie-rent-rentMovie', JSON.stringify(items));
+  };
+  const addRentMovie = (movie) => {
+    const newRentList = [...rentMovie, movie];
+    setRentMovie(newRentList);
+    saveToLocalStorage(newRentList);
+  };
   const removeFavouriteMovie = (movie) => {
-		const newRentList = rentMovie.filter(
-			(favourite) => favourite.imdbID !== movie.imdbID
-		);
+    const newRentList = rentMovie.filter((favourite) =>
+      favourite.imdbID !== movie.imdbID);
 
-		setRentMovie(newRentList);
-	};
-	useEffect(() => {
-		getMovieRequest(searchValue);
-	}, [searchValue]);
+    setRentMovie(newRentList);
+    saveToLocalStorage(newRentList);
+  };
 
-	return (
-		<div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Movies' />
-				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-			</div>
-			<div className='row'>
-				<MovieList
-					movies={movies}
-					cartComponent={AddToCart}
-					handleCartClick={addRentMovie}
-				/>
-			</div>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Favourites' />
-			</div>
-			<div className='row'>
-      <MovieList
-					movies={movies}
-					cartComponent={removeFavouriteMovie}
-					handleCartClick={RemoveFavourites}
-				/>
-			</div>
-		</div>
-	);
+
+  return (
+    <div className='container-fluid movie-app'>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
+        <MovieListHeading heading='Movies' />
+        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+      </div>
+      <div className='row'>
+        <MovieList
+          movies={movies}
+          cartComponent={AddToCart}
+          handleCartClick={addRentMovie}
+        />
+      </div>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
+        <MovieListHeading heading='Favourites' />
+      </div>
+      <div className='row'>
+        <MovieList
+          movies={movies}
+          cartComponent={removeFavouriteMovie}
+          handleCartClick={RemoveFavourites}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default App;
