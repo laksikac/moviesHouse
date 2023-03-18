@@ -5,7 +5,7 @@
   Backend: Node.js จะใช้ express, cors, compress, body-parser เข้ามาด้วย</br>
   Frontend: React Framework ตกแต่งด้วย bootstrap</br>
 </p>
-<br>
+
 <p><h5>Database</h5>
     มีการเก็บข้อมูลภาพยนตร์โดยมี data schema ดังนี้
     {
