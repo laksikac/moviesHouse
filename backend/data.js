@@ -5,10 +5,10 @@ const Schema = mongoose.Schema;
 const DataSchema = new Schema(
   {
     id: Number,
-    Title: String,
-    Year: String,
+    title: String,
+    yyear: String,
     imdbID: String,
-    Poster: String
+    poster: String
   },
   { timestamps: true }
 );

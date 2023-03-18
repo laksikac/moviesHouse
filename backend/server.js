@@ -76,18 +76,18 @@ router.delete('/deleteData', (req, res) => {
 router.post('/putData', (req, res) => {
   let data = new Data();
 
-  const { id, Title, Year, imdbID, Poster } = req.body;
+  const { id, title, year, imdbID, poster } = req.body;
 
-  if ((!id && id !== 0) || !Title || !Year ||!imdbID || !Poster) {
+  if ((!id && id !== 0) || !title || !year || !imdbID || !poster) {
     return res.json({
       success: false,
       error: 'INVALID INPUTS',
     });
   }
-  data.Title = Title;
-  data.Year = Year;
+  data.title = title;
+  data.year = year;
   data.imdbID = imdbID;
-  data.Poster = Poster;
+  data.poster = poster;
   data.id = id;
   data.save((err) => {
     if (err) return res.json({ success: false, error: err });
