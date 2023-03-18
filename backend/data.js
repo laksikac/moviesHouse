@@ -6,7 +6,7 @@ const DataSchema = new Schema(
   {
     id: Number,
     title: String,
-    yyear: String,
+    year: String,
     imdbID: String,
     poster: String
   },
