@@ -1,5 +1,5 @@
 <h3>Movie Rental</h3></br>
-อธิบายโปรเจค</br>
+<h5>อธิบายโปรเจค</br></h5>
  <p> โปรเจคนี้จะทำ web application สำหรับเช่าภาพยนต์โดยจะใช้เครื่องมือในการพัฒนา ดังนี้</br>
  Database: MongoDB</br>
  Backend: Node.js จะใช้ express, cors, compress, body-parser เข้ามาด้วย</br>
