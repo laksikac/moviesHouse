@@ -46,8 +46,11 @@
 </p>
 <h4>link video: https://youtu.be/xZmUsJhPTX0</h4>
 <h3>รายการหน้าเว็บไซต์</h3>
+<p>หน้าหลัก จะแสดงรายการภาพยนตร์ทั้งหมด</p>
 <img src="/frontend/assets/movies1.png" alt="main page" title=""></br>
+<p>ภาพนี้จะแสดง action การนำภาพยนตร์เข้าคลังรายการที่จะเช่าโดยกดปุ่ม add to rent</p>
 <img src="/frontend/assets/movies2.png" alt="add a movie to your cart" title=""></br>
+<p>ในคลังรายการที่จะเช่า จะมีภาพยนตร์ที่ถูกเลือก และมี action เพิ่มเติมคือสามารถลบรายกการที่จะเช่า ออกได้</p>
 <img src="/frontend/assets/movies3.png" alt="My cart" title="">
 
   
