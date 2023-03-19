@@ -45,9 +45,11 @@
     
 </p>
 <h3>รายการหน้าเว็บไซต์</h3>
-<img src="https://drive.google.com/file/d/1xR-1OnoOPRtO6LQB69h0fdaEafkl_mNF/view?usp=share_link">
-![movies2](https://user-images.githubusercontent.com/95014841/226159587-44f68fa7-440b-495f-8c19-c757d1a3eef1.png)
-![movies3](https://user-images.githubusercontent.com/95014841/226159588-efb7294c-cc05-4805-9ed7-ec86a0c8fea6.png)
+![movies1](https://user-images.githubusercontent.com/95014841/226160001-9cb8c846-df5c-4be7-965a-4e94d86724d9.png)
+![movies2](https://user-images.githubusercontent.com/95014841/226160007-fa2aad47-77e2-419f-bebe-54fc4b9ae87a.png)
+![movies3](https://user-images.githubusercontent.com/95014841/226160012-e82ff9ce-3d43-4be4-b456-e331f92fd8f9.png)
+
+
   
 <h3>สมาชิกในกลุ่ม</h3>
 -6310110257 บุษบากร ยูถนันท์ sec01</br>
