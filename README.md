@@ -45,7 +45,9 @@
     
 </p>
 <h3>รายการหน้าเว็บไซต์</h3>
-<img src="/frontend/assets/movies1.png" alt="Alt text" title="">
+<img src="/frontend/assets/movies1.png" alt="main page" title=""></br>
+<img src="/frontend/assets/movies2.png" alt="add a movie to your cart" title=""></br>
+<img src="/frontend/assets/movies3.png" alt="My cart" title="">
 
   
 <h3>สมาชิกในกลุ่ม</h3>
