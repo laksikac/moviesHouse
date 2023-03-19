@@ -44,6 +44,7 @@
     5).RemoveFavorites.js จะแสดงปุ่มกดเพื่อลบภาพยนตร์ที่จะเช่าออก</br>
     
 </p>
+<h4>link video: https://youtu.be/xZmUsJhPTX0</h4>
 <h3>รายการหน้าเว็บไซต์</h3>
 <img src="/frontend/assets/movies1.png" alt="main page" title=""></br>
 <img src="/frontend/assets/movies2.png" alt="add a movie to your cart" title=""></br>
