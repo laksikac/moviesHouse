@@ -29,7 +29,7 @@
     GET: http://localhost:3001/api/getData</br>
     POST: http://localhost:3001/api/putData</br>
     PUT: http://localhost:3001/api/updateData</br>
-    DELETE: http://localhost:3001/api/deleteData</br>
+    DELETE: http://localhost:3001/api/deleteData/:id</br>
     
 </p>
 <p><h5>Frontend</h5>
@@ -45,7 +45,7 @@
     
 </p>
 <h3>รายการหน้าเว็บไซต์</h3>
-[![movies1]](https://user-images.githubusercontent.com/95014841/226159584-b9916226-fb71-4cfd-9615-bff75173b28e.png)
+![movies1](https://user-images.githubusercontent.com/95014841/226159584-b9916226-fb71-4cfd-9615-bff75173b28e.png)
 ![movies2](https://user-images.githubusercontent.com/95014841/226159587-44f68fa7-440b-495f-8c19-c757d1a3eef1.png)
 ![movies3](https://user-images.githubusercontent.com/95014841/226159588-efb7294c-cc05-4805-9ed7-ec86a0c8fea6.png)
   
