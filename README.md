@@ -44,6 +44,8 @@
     5).RemoveFavorites.js จะแสดงปุ่มกดเพื่อลบภาพยนตร์ที่จะเช่าออก</br>
     
 </p>
+<h3>รายการหน้าเว็บไซต์</h3>
+<img src ="https://drive.google.com/file/d/1xR-1OnoOPRtO6LQB69h0fdaEafkl_mNF/view?usp=sharing">
   
 <h3>สมาชิกในกลุ่ม</h3>
 -6310110257 บุษบากร ยูถนันท์ sec01</br>
