@@ -25,7 +25,7 @@
     ใช้ node.js มาช่วยจัดการในส่วนนี้และเรียกใช้ express middleware 
     เปิดด้วย http://localhost:3001
     โดยสามารถเรียก api ใช้ Http request ในการเรียกดูข้อมูล อัพเดตข้อมูล เพิ่มข้อมูล และ ลบข้อมูล 
-    โดย method GET, POST, PUT, DELETE
+    โดย method GET, POST, PUT, DELETE</br>
     GET: http://localhost:3001/api/getData</br>
     POST: http://localhost:3001/api/putData</br>
     PUT: http://localhost:3001/api/updateData</br>
