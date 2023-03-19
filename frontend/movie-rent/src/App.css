@@ -1,10 +1,14 @@
 body {
-	background: #010d30;
+	background: #06412f;
 	color: #ffffff;
 }
 .movie-app > .row {
-	overflow-x: auto;
+	
 	flex-wrap: nowrap;
+
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .image-container {
