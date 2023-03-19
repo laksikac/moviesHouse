@@ -45,13 +45,14 @@
     
 </p>
 <h3>รายการหน้าเว็บไซต์</h3>
-![movies1](https://user-images.githubusercontent.com/95014841/226160001-9cb8c846-df5c-4be7-965a-4e94d86724d9.png)
-![movies2](https://user-images.githubusercontent.com/95014841/226160007-fa2aad47-77e2-419f-bebe-54fc4b9ae87a.png)
-![movies3](https://user-images.githubusercontent.com/95014841/226160012-e82ff9ce-3d43-4be4-b456-e331f92fd8f9.png)
+![movies1](https://user-images.githubusercontent.com/95014841/226160001-9cb8c846-df5c-4be7-965a-4e94d86724d9.PNG)
+![movies2](https://user-images.githubusercontent.com/95014841/226160007-fa2aad47-77e2-419f-bebe-54fc4b9ae87a.PNG)
+![movies3](https://user-images.githubusercontent.com/95014841/226160012-e82ff9ce-3d43-4be4-b456-e331f92fd8f9.PNG)
 
 
   
 <h3>สมาชิกในกลุ่ม</h3>
 -6310110257 บุษบากร ยูถนันท์ sec01</br>
+
 -6310110417 ลักษิกา ดำแดง sec02</br>
 -6310110656 รุ่งรวี แซ่ชิน sec01</br>
